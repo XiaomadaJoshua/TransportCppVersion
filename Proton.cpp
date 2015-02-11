@@ -151,8 +151,10 @@ void Proton::POInelastic(Random * ranGenerator, SecondaryParticles * secondary, 
 			Proton * p = new Proton(pos, dir, energy2SecondParticle);
 			float costhe = 1.0f - 2.0f*energy2SecondParticle*rand[1]/energy;
 //			float costhe = (2.0f - 2.0f*energy2SecondParticle/remainEnergy)*rand[1] + 2.0f*energy2SecondParticle/remainEnergy - 1.0f;
+
 			if(costhe > 1 || costhe < -1)
 				cout << "nan from POI\n";
+
 			float theta = acos(costhe);
 			float phi = 2.0f*PI*rand[2];
 			p->update(Vector3(0.0f,0.0f,0.0f), theta, phi, 0.0f);
