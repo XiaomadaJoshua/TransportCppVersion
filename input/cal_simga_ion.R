@@ -41,8 +41,8 @@ ne <- 3.342774e23
 sigma <- NULL
 sigma$energy <- energy
 sigma$sigIon <- cal_sigma_ion(energy = energy, ne = ne, Temin = Temin)
-sigma$sigPPE <- 0
-sigma$sigPOE <- 0
-sigma$sigPOI <- 0
+#sigma$sigPPE <- 0
+#sigma$sigPOE <- 0
+#sigma$sigPOI <- 0
 
-write.table(x = sigma, file = "C:/Users/S158879/workspace/ProtonTransport/input/carbon.crossSection", row.names = F, sep = '\t\t')
+write.table(x = sigma, file = "C:/Users/S158879/workspace/ProtonTransport/input/carbon_crossSection", row.names = F, sep = '\t\t')

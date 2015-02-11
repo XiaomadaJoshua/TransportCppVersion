@@ -1,11 +1,11 @@
 // directory for macro cross section:
-../input/carbon.crossSection
+input/carbon.crossSection
 // directory for mass stopping power ratio:
-../input/carbon.mater
+input/carbon.mater
 // directory for restricted stopping power in water:
-../input/carbon.rspw
+input/carbon.rspw
 // directory for density correction factor:
-../input/densityCorrection.dat
+input/densityCorrection.dat
 // beam parameters: width, energy, number of carbons, source center, iso center
 5
 2400.00000000
@@ -13,12 +13,12 @@
 0.00000000 -15.00000000 0.00000000
 0 0 0
 // number of batches
-1
+10
 // phantom parameters: vox size, iso center, width, hight, depth
 0.2	0.1	0.2
 0.00000000 0.00000000 0.00000000
-101	300	101
+51	300	51
 // size of secondary particle container
 100
 // output file
-C:/Users/S158879/workspace/ProtonTransport/Output/
+C:/Users/S158879/workspace/ProtonTransport/Output/carbon_200MeV/
